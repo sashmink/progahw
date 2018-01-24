@@ -8,6 +8,9 @@ def op(x):
         return splited_text
     if x == 2:
         f = open("adj.txt", encoding="utf-8")
+        text = f.read()
+        lines = text.splitlines()   
+        return lines
     if x == 3:
         f = open("noun_sg.txt", encoding="utf-8")
     if x == 4:
@@ -22,13 +25,11 @@ def punctuation():
     return random.choice(op(x))
     
 def adj(slog):
-    x=2
-    adj3sgf = ["жидкая", "мёрзлая", "старая", "тихая", "скучная", "круглая", "дальняя", "вечная", "летняя", "китовая"]
-    adj2sgm = ["первый", "ветхий", "Ноев", "мёртвый", "пьяный", "тленный", "лётный", "беглый", "мягкий", "добрый", "сонный", "светлый", "седой", "давний", "дикий", "красный"]
+x=2
     if slog == '3':
-        return random.choice(adj3sgf)
+        return random.choice(op(x)[0].split())
     if slog == '2':
-        return random.choice(adj2sgm)
+        return random.choice(op(x)[1].split())
 
 def noun_sg(slog):
     x=3
