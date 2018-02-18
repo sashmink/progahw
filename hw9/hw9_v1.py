@@ -20,12 +20,9 @@ def random_podskazka_choice(words, word):
     return podskazka
 
 
-words = (read_file())
-print (words)
+words = read_file()
 word = random_word_choice(words)
-print (word)
 podskazka = random_podskazka_choice(words, word)
-print (podskazka)
 print ('Я загадал слово.')
 print ('Подсказка: ' + podskazka + ' ...')
 a = len(word)
