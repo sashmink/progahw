@@ -1,7 +1,7 @@
 import re
 
 a = 0
-with open("bruney.htm", encoding="utf-8") as f:
+with open("strana.htm", encoding="utf-8") as f:
     lines = f.readlines()
     for line in lines:
         crit = re.search('Столица', line)
