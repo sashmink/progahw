@@ -20,7 +20,7 @@ def slova_po_7(predlogi):
 def zadacha(s7):
     for s in s7:
         tires = ''
-        tire = 29 - len(s)
+        tire = 29 - len(s) - len(str(len(s)))
         while tire:
             tires = tires + '-'
             tire = tire - 1
